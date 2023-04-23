@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing application</title>
+    <style>
+        div
+        {
+            background-color:cornflowerblue;
+            width:200px;
+            height: 300px;
+            text-align: center;
+            border:2px solid black;
+            border-radius: 10%;
+            margin: auto;
+            margin-top:100px;
+            
+        }
+    </style>
+    <script>
+        function show()
+        {
+            var q=Number(document.getElementById("qun").value);
+            var r=Number(document.getElementById("ra").value);
+            var res=q*r;
+            document.getElementById("result").value=res;
+        }
+    </script>
+</head>
+<body>
+    <div>
+    <h4>Billing Application</h4>
+    <input type="text" id="qun" placeholder="Input quantity"><br><br>
+    <input type="text" id="ra" placeholder="Input rate"><br><br>
+    <input type="text" id="result" placeholder="show total bill"><br><br>
+    <input type="button" value="Calculate Bill" onclick="show()"><br><br>
+    </div>
+</body>
+</html>
